@@ -264,7 +264,7 @@ h4 {
     justify-content: center;
     align-items: center;
     position: absolute;
-    transform: translate(60%, 50%);
+    transform: translate(40%, 50%);
     text-align: center;
     top: 10%;
 
@@ -276,11 +276,52 @@ h4 {
     color: #EAF4F4;
     text-decoration: underline;
     text-decoration-color: #6B9080;
-    transform: translate(10%, 90%);
+    transform: translate(-5em, 90%);
     top: 20%;
     bottom: 15%;
 }
 
+/*Stages of Meta*/
+
+.accordion .container {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+.accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.accordion hr {
+    width: 100%;
+    margin-left: 0;
+    border: 1px solid grey;
+}
 
 
 /*DONATION BOX*/
